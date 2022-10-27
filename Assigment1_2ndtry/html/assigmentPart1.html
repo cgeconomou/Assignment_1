@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Assigment 1</title>
+    <link rel="stylesheet" href="..\css\assigmentPart1.css">
+    <style>
+      .banner {
+position: relative;
+background-image: url("assigmentpart1.jpg");  
+background-size:cover;
+background-repeat: no-repeat;
+height: 60vh;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+    </style>
+</head>
+
+<body>
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="..\html\home.html" class="w3-bar-item w3-button"><b>CG</b> Assigment 1/Part1/Form For Assigments</a>
+      
+      <div class="w3-right w3-hide-small">
+        
+      </div>
+    </div>
+  </div>
+    <div class="testbox">
+        <form action="/">
+          <div class="banner">
+            <h1>Assigment Form</h1>
+          </div>
+          <p>Assigment Information</p>
+          <table border="1">
+      
+            <tr>
+              <td>Title*</td>
+              <td><input type="text" placeholder="Write Title" required id="field1"/> </td>
+            </tr>
+            <tr>
+              <td>Description*</td>
+              <td><input type="text" placeholder="Write Description"  required id="field2"/></td>
+            </tr>
+            <tr>
+              <td>Oral Mark</td>
+              <td><input type="text" placeholder="Oral Mark" required id="field3"/></td>
+            </tr>
+            <tr>
+              <td>Total Mark</td>
+              <td><input type="text" placeholder="Total Mark" required id="field4"/></td>
+            </tr>
+    
+    
+            <tr>
+              <td>Date of submission*</td>
+              <td> <input type="date" placeholder="dd/mm/yyy" required id="field5"/>
+                <i class="fas fa-calendar-alt"></i>
+              </td>
+            </tr>
+            
+              <td><input type="submit" name="submit" value="Submit" id="submit"/>
+                <button type="submit" id="update" hidden>Update</button> </td>
+             
+              <td><input type="reset" name="reset" value="Reset" id="reset"/></td>
+              
+            </tr>
+            
+    
+          </table>
+          
+        </form>
+        
+      </div>
+      
+      
+      <div id="katwMeros">
+        
+    
+      
+      <div  id="students"></div>
+    </div>
+    <script src="..\js\students.js"></script>
+</body>
+</html>

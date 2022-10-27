@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Form For Assigments Per Course</title>
+  <link rel="stylesheet" href="..\css\part4A.css">
+</head>
+<body>
+  <div class="backgroundImage">  
+    <body>
+      <div class="backgroundImage">  
+        <body>
+          <div class="main-block">
+            <div class="left-part">
+              <i class="fas fa-graduation-cap"></i>
+              <h1>Here Are The Results Of Your Submition</h1>
+              <div  id="students"></div>
+              <div class="btn-group">
+                <a class="btn-item" href="..\html\home.html">HOME</a>
+                
+              </div>
+            </div>
+            <form action="/">
+              <div >
+                <i class="fas fa-pencil-alt"></i> 
+                <h2>Edit Form For Assigments Per Course</h2>
+              </div>
+              <div class="info">
+                
+                <select id="field1"> 
+                  <option value="course-type" selected>Choose Assigment*</option>
+                  <option value="Assigment 1">Assigment 1</option>
+                  <option value="Assigment 2">Assigment 2</option>
+                  <option value="Assigment 3">Assigment 3</option>
+                  <option value="Assigment 4">Assigment 4</option>
+                </select>
+                <select id="field2"> 
+                  <option value="course-type" selected>Courses*</option>
+                  <option value="C#">C#</option>
+                  <option value="Java">Java</option>
+                  <option value="JavaScrip">JavaScrip</option>
+                  <option value="Python">Python</option>
+               </select>
+               <select id="field3"> 
+                <option value="course-type" selected>Course Type*</option>
+                <option value="Full-Time">Full-Time</option>
+                <option value="Part-Time">Part-Time</option>
+             </select>
+             <input type="text" name="name" placeholder="Starting Date*" id="field4">
+                <input type="text" name="name" placeholder="Ending Date*" id="field5">
+              </div>
+              
+              <input type="submit" name="submit" value="Submit" id="submit"/>
+                 
+                <input type="submit"  value="Update" id="update" hidden/>
+              <input  type="reset" name="reset" value="Reset" id="reset"/>
+            </form>
+          </div>
+        </body>
+      </html>  
+      </div>
+      <script src="..\js\validate.js"></script>
+    </body>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .backgroundImage{
+    background-image: url("formPartF.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+</style>
+</html>

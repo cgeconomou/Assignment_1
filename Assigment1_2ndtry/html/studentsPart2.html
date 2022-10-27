@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html, body {
+    min-height: 100%;
+    }
+    body, div, form, input, select, p { 
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    color: #eee;
+    }
+   
+    h1, h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    }
+    h2 {
+    margin: 0 0 0 8px;
+    }
+    .main-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.5); 
+    }
+    .left-part, form {
+    padding: 25px;
+    }
+    .left-part {
+    text-align: center;
+    }
+    .fa-graduation-cap {
+    font-size: 72px;
+    }
+    form {
+    background: rgba(0, 0, 0, 0.7); 
+    }
+    .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    }
+    .info {
+    display: flex;
+    flex-direction: column;
+    }
+    input, select {
+    padding: 5px;
+    margin-bottom: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #eee;
+    }
+    input::placeholder {
+    color: #eee;
+    }
+    option:focus {
+    border: none;
+    }
+    option {
+    background: black; 
+    border: none;
+    }
+    .checkbox input {
+    margin: 0 10px 0 0;
+    vertical-align: middle;
+    }
+    .checkbox a {
+    color: #26a9e0;
+    }
+    .checkbox a:hover {
+    color: #85d6de;
+    }
+    .btn-item, button {
+    padding: 10px 5px;
+    margin-top: 20px;
+    border-radius: 5px; 
+    border: none;
+    background: #26a9e0; 
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    }
+    .btn-item {
+    display: inline-block;
+    margin: 20px 5px 0;
+    }
+   
+    button:hover, .btn-item:hover {
+    background: #85d6de;
+    }
+    @media (min-width: 568px) {
+    html, body {
+    height: 100%;
+    }
+    .main-block {
+    flex-direction: row;
+    height: calc(100% - 50px);
+    }
+    .left-part, form {
+    flex: 1;
+    height: auto;
+    }
+    }
+  </style>
+</head>
+<body>
+  <div class="backgroundImage">  
+    <body>
+      <div class="backgroundImage">  
+        <body>
+          <div class="backgroundImage">  
+            <body>
+              <div class="main-block">
+                <div class="left-part">
+                  <i class="fas fa-graduation-cap"></i>
+                  <h1>Here Are The Results Of Your Submition</h1>
+                  <div  id="students"></div>
+                  <div class="btn-group">
+                    <a class="btn-item" href="..\html\home.html">HOME</a>
+                    
+                  </div>
+                </div>
+                <form action="/">
+                  <div >
+                    <i class="fas fa-pencil-alt"></i> 
+                    <h2>Edit Form For Student Per Course</h2>
+                  </div>
+                  <div class="info">
+                    
+                    <select id="field1"> 
+                      <option value="choose again" selected>Choose Student*</option>
+                      <option value="Student 1">Student 1</option>
+                      <option value="Student 2">Student 2</option>
+                      <option value="Student 3">Student 3</option>
+                      <option value="Student 4">Student 4</option>
+                    </select>
+                    <select id="field2"> 
+                      <option value="choose again" selected>Courses*</option>
+                      <option value="C#">C#</option>
+                      <option value="Java">Java</option>
+                      <option value="JavaScrip">JavaScrip</option>
+                      <option value="Python">Python</option>
+                   </select>
+                   <select id="field3"> 
+                    <option value="choose again" selected>Course Type*</option>
+                    <option value="Full-Time">Full-Time</option>
+                    <option value="Part-Time">Part-Time</option>
+                 </select>
+                 <input type="text" name="name" placeholder="Starting Date*" id="field4">
+                    <input type="text" name="name" placeholder="Ending Date*" id="field5">
+                  </div>
+                  
+                  <input type="submit" name="submit" value="Submit" id="submit"/>
+                     
+                    <input type="submit"  value="Update" id="update" hidden/>
+                  <input  type="reset" name="reset" value="Reset" id="reset"/>
+                </form>
+              </div>
+            </body>
+          </html>  
+          </div>
+          <script src="..\js\students.js"></script>teachersPart2.jpg
+        </body>
+  </html>  
+  </div>
+  
+</body>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .backgroundImage{
+    background-image: url("studentsPart2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+</style>
+</html>
